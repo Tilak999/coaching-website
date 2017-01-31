@@ -16,3 +16,17 @@
 .color-grey{
     color: #828282;
 }
+
+.padd-container
+{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus
+{
+    background: #f95959;
+    color: #fff;
+}
