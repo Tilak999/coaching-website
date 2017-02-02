@@ -30,3 +30,15 @@
     background: #f95959;
     color: #fff;
 }
+
+.shadow
+{
+    box-shadow: #ccc 1px 1px 15px;
+    background: white;
+}
+
+.quiz-clear-btn
+{
+    margin-left:15px;
+    margin-bottom: 10px;
+}

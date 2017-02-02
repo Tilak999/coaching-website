@@ -30,3 +30,49 @@
             return $row;
         }
     }
+
+    function getQuizList($conn)
+    {
+        $sql = "SELECT * FROM quiz";
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0)
+        {
+           return $result;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    function getQuestions($conn,$qid)
+    {
+        $sql = "SELECT * FROM quiz_questions where qid =".$qid;
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0)
+        {
+           return $result;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    function getQuizData($conn,$id)
+    {
+        $sql = "SELECT * FROM quiz where id =".$id;
+        $result = $conn->query($sql);
+
+        if($result->num_rows==1)
+        {
+           $row = $result->fetch_assoc();
+           return $row;
+        }
+        else
+        {
+            return null;
+        }
+    }
