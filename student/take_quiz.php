@@ -41,11 +41,15 @@
         <br><br><br>
   		<div class="row">
               <div class="col-xs-12 col-md-4">
-                  <h3>Guidelines: </h3>
+                  <h3>Description: </h3>
                   <p><?php echo $quiz["description"]; ?></p>
+
+                  <h3>Guidelines: </h3>
+                  <p><?php echo $quiz["guidelines"]; ?></p>
               </div>
 
 			  <div class="col-xs-12 col-md-8">
+                <h3><?php echo $quiz["title"]; ?></h3>
                 <form action="eval_quiz.php" method="POST">
                 <input type="text" class="hidden" name="quiz-id" value="<?php echo $quiz["id"]; ?>"/>
                 <?php

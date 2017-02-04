@@ -14,7 +14,7 @@
         $email = mysqli_real_escape_string($conn,$_POST['email']);
         $password = md5(mysqli_real_escape_string($conn,$_POST['password']));
     
-        $sql = "SELECT id FROM registration_data WHERE email = '$email' AND password = '$password'";
+        $sql = "SELECT id FROM admin WHERE email = '$email' AND password = '$password'";
         $result = $conn->query($sql);
 
         if($result->num_rows == 1)
@@ -22,8 +22,8 @@
             echo "success";
             $row = $result->fetch_assoc();
             $_SESSION['valid'] = TRUE;
-            $_SESSION['id'] = $row['id'];
-            unset($_SESSION['admin_id']);
+            $_SESSION['admin_id'] = $row['id'];
+            unset($_SESSION['id']);
         }
         else
         {

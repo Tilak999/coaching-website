@@ -15,25 +15,6 @@
 					<div class="col-xs-2">
 						<div id="fh5co-logo"><a href="index.html">Coaching<span>.</span></a></div>
 					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="practice.html">Practice Areas</a></li>
-							<li><a href="won.html">Won Cases</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
-						</ul>
-					</div>
 				</div>
 				
 			</div>
@@ -42,7 +23,7 @@
 
 	<div class="grey-div">
 		<div class="well well-lg login-box">
-			<center><h2 class="color-grey">Login</h2></center>
+			<center><h2 class="color-grey">Admin Login</h2></center>
 			<form class="form-horizontal">
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -59,9 +40,6 @@
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
 					<div class="checkbox">
-						<label>
-						<input type="checkbox"> Remember me
-						</label>
 						<div class="pull-right text-primary">
 							<a href="#forgot">Forgot Password ?</a>
 						</div>
@@ -102,7 +80,7 @@
 
 			if(email !="" && password!="")
 			{
-				$.post("student/verify.php",
+				$.post("admin/verify.php",
 				{
 					email: $("#email").val(),
 					password: $("#password").val()
@@ -111,7 +89,7 @@
 					console.log(data);
 					if(data=="success")
 					{
-						window.location = "student/dashboard.php";
+						window.location = "admin/dashboard.php";
 					}
 					else
 					{

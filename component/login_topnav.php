@@ -7,11 +7,11 @@
                 </div>
                 <div class="col-xs-10 text-right menu-1">
                     <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/practice.html">Student</a></li>
-                        <li><a href="/won.html">Update </a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/index.php">Home</a></li>
+                        <li><a href="/practice.php">Student</a></li>
+                        <li><a href="/won.php">Update </a></li>
+                        <li><a href="/about.php">About</a></li>
+                        <li><a href="/contact.php">Contact</a></li>
                         <li class="btn-cta"><a href="#"><span>Logout</span></a></li>
                     </ul>
                 </div>

@@ -6,8 +6,11 @@
 
     if(!isset($_SESSION['id']))
     {
-        session_destroy();
-        header("Location:".$base_url);
+        if(!isset($_SESSION['admin_id']))
+        {
+            session_destroy();
+            header("Location:".$base_url);
+        }
     } 
     
     $conn = new mysqli($MySql_server, $MySql_user, $MySql_pass, $MySql_db);
@@ -68,11 +71,36 @@
 
         if($result->num_rows==1)
         {
-           $row = $result->fetch_assoc();
-           return $row;
+            $row = $result->fetch_assoc();
+            return $row;
         }
         else
         {
             return null;
+        }
+    }
+
+    function saveQuizReport($conn,$data)
+    {
+        $user = $_SESSION['id'];
+        $sql = "INSERT INTO quiz_report (quiz_id, user_id, marks, attempted, total_question) VALUES (".$data["quiz-id"].
+                ",".$user.", ".$data["marks"].", ".$data["attempted"].", ".$data["count"].")";
+        
+        if($conn->query($sql)==TRUE)
+        {
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
+
+    function checkAdmin($conn)
+    {
+        if(!isset($_SESSION['admin_id']))
+        {
+            session_destroy();
+            header("Location:".$base_url);
         }
     }

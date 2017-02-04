@@ -7,13 +7,15 @@
         if(isset($_POST)&&isset($_POST["quiz-id"]))
         {
             $result = getQuestions($conn,$_POST["quiz-id"]);
+            $quiz = getQuizData($conn,$_POST["quiz-id"]);
 
             if($result!=NULL)
             {
-                $marks = 0;
-                $total_qsn = $result->num_rows;
-                $attempted = 0;
-                $correct = 0;
+                $data["marks"] = 0;
+                $data["count"] = $result->num_rows;
+                $data["attempted"] = 0;
+                $data["correct"] = 0;
+                $data["quiz-id"] = $_POST["quiz-id"];
 
                 while($row = $result->fetch_assoc())
                 {
@@ -22,9 +24,9 @@
                     
                     if($_POST[$id]==$answer)
                     {
-                        $marks = $marks + $row["marks"];
-                        $attempted++;
-                        $correct++;
+                        $data["marks"] = $data["marks"] + $row["marks"];
+                        $data["attempted"]++;
+                        $data["correct"]++;
                     }
                     else if($_POST[$id]==0)
                     {
@@ -32,12 +34,17 @@
                     }
                     else
                     {
-                        $marks = $marks + $row["negative_marks"];
-                        $attempted++;
+                        $data["marks"] = $data["marks"] + $row["negative_marks"];
+                        $data["attempted"]++;
                     }
                 }
 
-                echo $marks;
+                saveQuizReport($conn,$data);
+
+            }
+            else
+            {
+                header("Location:".$base_url."student/dashboard.php");
             }
         }
     ?>
@@ -46,35 +53,30 @@
 		
 	<div class="fh5co-loader"></div>
 
-	<nav class="fh5co-nav navbar-fixed-top shadow" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div id="fh5co-logo"><a href="/index.php">Law<span>.</span></a></div>
-                    </div>
-                    <div class="col-xs-10 text-right menu-1">
-                        <button class="btn btn-default" id="clock">00:00:00</button>
-                        <button class="btn btn-primary" onclick="submit()">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+	<?php require("../component/login_topnav.php"); ?>
 
 	<div class="container padd-container">
-        <br><br><br>
+        <br>
   		<div class="row">
-              <div class="col-xs-12 col-md-4">
-                 
-              </div>
-
-			  <div class="col-xs-12 col-md-8">
-                <form action="eval_quiz.php" method="POST">
-           
-                
-                </form>
-			  </div>
+            <div class="col-xs-12 col-md-12">
+                <div class="well shadow">
+                    <br>
+                <center>
+                    <h2><?php echo $quiz["title"]; ?></h2>
+                    <h2 class="color-grey">Your Score</h2>
+                    <h1>
+                        <?php echo $data["marks"]; ?>
+                        <span class="color-grey">/
+                            <?php echo $quiz["max_marks"]; ?>
+                        </span>
+                    </h1>
+                    <br>
+                    <p>Number of Question Attempted: <?php echo $data["attempted"]; ?><br>
+                        Number of correct Answer: <?php echo $data["correct"]; ?>
+                    </p>
+                </center>
+                </div>
+            </div>
 		</div>
 	</div>
 	
