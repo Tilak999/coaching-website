@@ -2,8 +2,19 @@
 <html>
 	<?php require('../helper/dbHelper.php');?>
 	<?php require('../component/head.php'); ?>
-	<?php checkAdmin($conn);
-          $result = getQuizList($conn); 
+	<?php 
+        if(!isset($_SESSION['admin_id']))
+        {
+            session_destroy();
+            header("Location:".$base_url);
+        }
+
+        if(isset($_POST['quiz_id']))
+        {
+            deleteQuiz($conn,$_POST['quiz_id']);
+        }
+        
+        $result = getQuizList($conn); 
     ?>
 
 	<body>
@@ -59,13 +70,14 @@
                                 }
                             ?>
                             <li class="list-group-item">
-                                <a href="quiz_creator.php" target="_blank">
+                                <a href="quiz_creator.php">
                                 <center>
                                     <span class="glyphicon glyphicon-plus"></span> Create New Quiz
                                 </center>
                                 </a>
                             </li>
                         </ul>
+                        <form method="POST" class="hidden"><input type="text" name="quiz_id" value=0></form>
                     </div>
 			  </div>
 		</div>
@@ -88,7 +100,7 @@
 
         $(".editBtn").click(function(){
             var id = $(this).parent().attr("data-id");
-            window.open("quiz_creator.php?quiz_id="+id);
+            window.location = "quiz_creator.php?quiz_id="+id;
         });
 
         $(".deleteBtn").click(function(){
@@ -97,7 +109,8 @@
 
             if(ans == true)
             {
-                //delete operation
+                $("input").val(id);
+                $("form").submit(); 
             }
         });
 

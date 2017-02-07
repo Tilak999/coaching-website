@@ -3,7 +3,7 @@
     session_start();
 
     require('../helper/config.php');
-
+ 
     if(!isset($_SESSION['id']))
     {
         if(!isset($_SESSION['admin_id']))
@@ -21,6 +21,22 @@
         $row['id'] = null;
 
         $sql = "SELECT * FROM registration_data WHERE id =".$id;
+        $result = $conn->query($sql);
+
+        if($result->num_rows == 1)
+        {
+           $row = $result->fetch_assoc();
+           return $row;
+        }
+        else
+        {
+            return $row;
+        }
+    }
+
+    function getAdminProfile($conn,$id)
+    {
+        $sql = "SELECT * FROM admin WHERE id =".$id;
         $result = $conn->query($sql);
 
         if($result->num_rows == 1)
@@ -96,11 +112,13 @@
         }
     }
 
-    function checkAdmin($conn)
+    function deleteQuiz($conn,$id)
     {
-        if(!isset($_SESSION['admin_id']))
+        $sql = "DELETE FROM quiz WHERE id=".$id;
+        
+        if($conn->query($sql)==TRUE)
         {
-            session_destroy();
-            header("Location:".$base_url);
+            $sql = "DELETE FROM quiz_questions WHERE qid=".$id;
+            $conn->query($sql);
         }
     }

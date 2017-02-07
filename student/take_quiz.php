@@ -41,14 +41,18 @@
         <br><br><br>
   		<div class="row">
               <div class="col-xs-12 col-md-4">
-                  <h3>Description: </h3>
-                  <p><?php echo $quiz["description"]; ?></p>
+                <div class="panel panel-default shadow">
+                    <div class="panel-body" style="padding:20px;">
+                        <h3>Description: </h3>
+                        <p><?php echo $quiz["description"]; ?></p>
 
-                  <h3>Guidelines: </h3>
-                  <p><?php echo $quiz["guidelines"]; ?></p>
+                        <h3>Guidelines: </h3>
+                        <p><?php echo $quiz["guidelines"]; ?></p>
+                  </div>
+                </div>
               </div>
 
-			  <div class="col-xs-12 col-md-8">
+			  <div class="col-xs-12 col-md-8 well">
                 <h3><?php echo $quiz["title"]; ?></h3>
                 <form action="eval_quiz.php" method="POST">
                 <input type="text" class="hidden" name="quiz-id" value="<?php echo $quiz["id"]; ?>"/>
@@ -59,18 +63,18 @@
 
                         while($row = $result->fetch_assoc())
                         {
-                            echo '<div class="panel panel-default">
+                            echo '<div class="panel panel-primary shadow">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Q'.$count.'. '.$row['question'].'</h3>
+                                        <h2 class="panel-title">Q'.$count.'. '.$row['question'].'</h2>
                                     </div>
                                     <div class="panel-body">
-                                        <input type="radio" name="'.$row['id'].'" value="1"> '.$row['option1'].'<br>
-                                        <input type="radio" name="'.$row['id'].'" value="2"> '.$row['option2'].'<br>
-                                        <input type="radio" name="'.$row['id'].'" value="3"> '.$row['option3'].'<br>
-                                        <input type="radio" name="'.$row['id'].'" value="4"> '.$row['option4'].'<br>
+                                        <input type="radio" name="'.$row['id'].'" value="1">&nbsp;A) '.$row['option1'].'<br>
+                                        <input type="radio" name="'.$row['id'].'" value="2">&nbsp;B)  '.$row['option2'].'<br>
+                                        <input type="radio" name="'.$row['id'].'" value="3">&nbsp;C)  '.$row['option3'].'<br>
+                                        <input type="radio" name="'.$row['id'].'" value="4">&nbsp;D)  '.$row['option4'].'<br>
+                                        <input class="hidden" type="radio" name="'.$row['id'].'" value="0" checked>
+                                    <button type="button" class="btn btn-default pull-right" onClick="clearSelection(this)">Clear</button>
                                     </div>
-                                    <input class="hidden" type="radio" name="'.$row['id'].'" value="0" checked>
-                                    <button type="button" class="quiz-clear-btn" onClick="clearSelection(this)">Clear</button>
                                 </div>';
                             
                             $count = $count +1;
@@ -82,6 +86,45 @@
 			  </div>
 		</div>
 	</div>
+
+    <!-- Model Shown Before The Test Starts -->
+    <div class="modal fade" id="test-model" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Description and Guidelines</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Description: </h3>
+                <p><?php echo $quiz["description"]; ?></p>
+
+                <h3>Guidelines: </h3>
+                <p><?php echo $quiz["guidelines"]; ?></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Ready</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Shown Before Submission of test -->
+    <div class="modal fade" id="submit-test-model" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Submit Test</h4>
+            </div>
+            <div class="modal-body">
+                <h4>Do you want to submit the test ?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="end()">Submit</button>
+            </div>
+            </div>
+        </div>
+    </div>
 	
     
 
@@ -106,16 +149,14 @@
                 onend   : end 
             });
 
-            var start = confirm("Ready for Quiz.\n Look for time in top right..");
+            
 
-            if(start == true)
-            {
+            $("#test-model").modal({keyboard: false,backdrop: 'static'});
+            $("#test-model").find("button").click(function(){
                 myTimer.start(<?php echo $quiz["time_alloted"]; ?>);
-            }
-            else
-            {
-                window.close();
-            }
+                $("#test-model").modal('hide')
+            });
+           
 		});
 
         function tick(ms)
@@ -128,14 +169,9 @@
             $("form").submit();
         }
 
-        function submit()
+        function submit(confirm)
         {
-            var ans = confirm("Do you want to Submit Quiz ?");
-
-            if(ans == true)
-            {
-                end();
-            }
+            $("#submit-test-model").modal();
         }
 
         function msToTime(duration) {

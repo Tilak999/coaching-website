@@ -2,7 +2,13 @@
 <html>
 	<?php require('../helper/dbHelper.php');?>
 	<?php require('../component/head.php'); ?>
-	<?php checkAdmin($conn); ?>
+	<?php
+		if(!isset($_SESSION['admin_id']))
+        {
+            session_destroy();
+            header("Location:".$base_url);
+        }
+	?>
 
 	<body>
 		

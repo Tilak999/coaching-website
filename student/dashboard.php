@@ -2,7 +2,18 @@
 <html>
 	<?php require('../helper/dbHelper.php'); ?>
 	<?php require('../component/head.php'); ?>
-	<?php $arr = getProfile($_SESSION['id'],$conn); ?>
+	<?php 
+
+		if(!isset($_SESSION['id']))
+		{
+			session_destroy();
+            header("Location:".$base_url);
+			die();
+		}
+		
+		$arr = getProfile($_SESSION['id'],$conn); 
+	
+	?>
 
 	<body>
 		
