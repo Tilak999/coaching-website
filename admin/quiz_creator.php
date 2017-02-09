@@ -1,32 +1,32 @@
+<?php require('../helper/dbHelper.php');?>
+<?php require('../component/head.php'); ?>
+<?php 
+
+    if(!isset($_SESSION['admin_id']))
+    {
+        session_destroy();
+        header("Location:".$base_url);
+        die();
+    }
+
+    $id = 0;
+    if(isset($_GET['quiz_id']))
+    {
+        $id = $_GET['quiz_id'];
+        $result = getQuizData($conn,$id);
+        if(!$result) header("Location:".$base_url);
+    }
+    else
+    {
+        $result['title'] = "";
+        $result['description'] = "";
+        $result['guidelines'] = "";
+        $result['time_alloted'] = 0; 
+    }
+?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php');?>
-	<?php require('../component/head.php'); ?>
-	<?php 
-
-        if(!isset($_SESSION['admin_id']))
-        {
-            session_destroy();
-            header("Location:".$base_url);
-            die();
-        }
-
-        $id = 0;
-        if(isset($_GET['quiz_id']))
-        {
-            $id = $_GET['quiz_id'];
-            $result = getQuizData($conn,$id);
-            if(!$result) header("Location:".$base_url);
-        }
-        else
-        {
-            $result['title'] = "";
-            $result['description'] = "";
-            $result['guidelines'] = "";
-            $result['time_alloted'] = 0; 
-        }
-    ?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

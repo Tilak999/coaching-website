@@ -1,22 +1,22 @@
+<?php require('../helper/dbHelper.php'); ?>
+<?php require('../component/head.php'); ?>
+<?php 
+    
+    if(isset($_GET['id']))
+    {
+        $result = getQuestions($conn,$_GET['id']);
+        $quiz = getQuizData($conn,$_GET['id']);
+    }
+    else
+    {
+        header("Location:".$base_url);
+        die();
+    }
+
+?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php'); ?>
-	<?php require('../component/head.php'); ?>
-	<?php 
-        
-        if(isset($_GET['id']))
-        {
-            $result = getQuestions($conn,$_GET['id']);
-            $quiz = getQuizData($conn,$_GET['id']);
-        }
-        else
-        {
-            header("Location:".$base_url);
-            die();
-        }
-    
-    ?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

@@ -1,20 +1,19 @@
+<?php 
+	require('../helper/dbHelper.php'); 
+	require('../component/head.php');
+
+	if(!isset($_SESSION['id']))
+	{
+		session_destroy();
+		header("Location:".$base_url);
+		die();
+	}
+	
+	$arr = getProfile($_SESSION['id'],$conn); 
+?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php'); ?>
-	<?php require('../component/head.php'); ?>
-	<?php 
-
-		if(!isset($_SESSION['id']))
-		{
-			session_destroy();
-            header("Location:".$base_url);
-			die();
-		}
-		
-		$arr = getProfile($_SESSION['id'],$conn); 
-	
-	?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	
-	<?php include ('/component/head.php'); ?>
+	<?php include ('./component/head.php'); ?>
 	
 	<body>
 		
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 
-	<?php include('/component/footer.php'); ?>
+	<?php include('./component/footer.php'); ?>
 
 	</div>
 
@@ -69,7 +69,7 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
-	<?php require('/component/scripts.php'); ?>
+	<?php require('./component/scripts.php'); ?>
 	
 	<script>
 		$( "form" ).submit(function(event) {

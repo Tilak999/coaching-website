@@ -122,3 +122,85 @@
             $conn->query($sql);
         }
     }
+
+    function getStudents($conn,$selector,$search)
+    {
+        if($selector=="" && $search=="")
+        {
+            $sql = "SELECT * FROM registration_data";    
+        }
+        else
+        {
+            $selector = strtolower($selector);
+            $selector = preg_replace('/\s+/', '_', $selector);
+
+            $sql = "SELECT * FROM registration_data WHERE $selector LIKE '%$search%'";
+        }
+
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0)
+        {
+           return $result;
+        }
+        else
+        {
+           return FALSE;
+        }
+    }
+
+    function getAvgAttendance($conn,$id)
+    {
+        
+        $sql = "SELECT * FROM attendance WHERE student_id=$id";
+
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0)
+        {
+           $attendance = 0;
+           $total = 0;
+
+           while($row = $result->fetch_assoc())
+           {
+                $attendance += $row['attended'];
+                $total += $row['total'];
+           }
+
+           return ($attendance/$total)*100;
+        }
+        else
+        {
+           return 0;
+        }
+    }
+
+    function getAttendance($conn,$id)
+    {
+        $sql = "SELECT * FROM attendance WHERE student_id=$id";
+
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0)
+        {
+           return $result;
+        }
+        else
+        {
+           return FALSE;
+        }
+    }
+
+    function saveAttendance($conn,$id,$dur,$atten,$total)
+    {
+        $sql = "INSERT INTO attendance (student_id,duration,total,attended) VALUES ($id,'$dur',$total,$atten)";
+
+        if($conn->query($sql)==TRUE)
+        {
+            return "success";
+        }
+        else
+        {
+            return $sql;
+        }
+    }

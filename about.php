@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	
-	<?php include ('/component/head.php'); ?>
+	<?php include ('./component/head.php'); ?>
 	
 	<body>
 		
@@ -215,7 +215,7 @@
 		</div>
 	</div>
 
-	<?php include('/component/footer.php'); ?>
+	<?php include('./component/footer.php'); ?>
 
 	</div>
 

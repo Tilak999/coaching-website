@@ -1,8 +1,9 @@
+<?php require('../helper/dbHelper.php'); ?>
+<?php require('../component/head.php'); ?>
+<?php $result = getQuizList($conn); ?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php'); ?>
-	<?php require('../component/head.php'); ?>
-    <?php $result = getQuizList($conn); ?>
 	<body>
 		
 	<div class="fh5co-loader"></div>

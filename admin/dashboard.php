@@ -1,15 +1,16 @@
+<?php require('../helper/dbHelper.php');?>
+<?php require('../component/head.php'); ?>
+
+<?php
+    if(!isset($_SESSION['admin_id']))
+    {
+        session_destroy();
+        header("Location:".$base_url);
+    }
+?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php');?>
-	<?php require('../component/head.php'); ?>
-	<?php
-		if(!isset($_SESSION['admin_id']))
-        {
-            session_destroy();
-            header("Location:".$base_url);
-        }
-	?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

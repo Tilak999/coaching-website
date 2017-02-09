@@ -13,7 +13,7 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li class="btn-cta"><a href="/login.php"><span>Login</span></a></li>
-                        <li class="btn-cta"><a href="/signup.php"><span>Sign Up</span></a></li>
+                        <li class="btn-cta"><a href="/register.php"><span>Sign Up</span></a></li>
                     </ul>
                 </div>
             </div>

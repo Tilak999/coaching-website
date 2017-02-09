@@ -1,54 +1,53 @@
+<?php require('../helper/dbHelper.php'); ?>
+<?php require('../component/head.php'); ?>
+<?php       
+    if(isset($_POST)&&isset($_POST["quiz-id"]))
+    {
+        $result = getQuestions($conn,$_POST["quiz-id"]);
+        $quiz = getQuizData($conn,$_POST["quiz-id"]);
+
+        if($result!=NULL)
+        {
+            $data["marks"] = 0;
+            $data["count"] = $result->num_rows;
+            $data["attempted"] = 0;
+            $data["correct"] = 0;
+            $data["quiz-id"] = $_POST["quiz-id"];
+
+            while($row = $result->fetch_assoc())
+            {
+                $id = $row["id"];
+                $answer = $row["answer"];
+                
+                if($_POST[$id]==$answer)
+                {
+                    $data["marks"] = $data["marks"] + $row["marks"];
+                    $data["attempted"]++;
+                    $data["correct"]++;
+                }
+                else if($_POST[$id]==0)
+                {
+                    // do nothing if user not given answer
+                }
+                else
+                {
+                    $data["marks"] = $data["marks"] + $row["negative_marks"];
+                    $data["attempted"]++;
+                }
+            }
+
+            saveQuizReport($conn,$data);
+
+        }
+        else
+        {
+            header("Location:".$base_url."student/dashboard.php");
+        }
+    }
+?>
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php'); ?>
-	<?php require('../component/head.php'); ?>
-	<?php 
-        
-        if(isset($_POST)&&isset($_POST["quiz-id"]))
-        {
-            $result = getQuestions($conn,$_POST["quiz-id"]);
-            $quiz = getQuizData($conn,$_POST["quiz-id"]);
-
-            if($result!=NULL)
-            {
-                $data["marks"] = 0;
-                $data["count"] = $result->num_rows;
-                $data["attempted"] = 0;
-                $data["correct"] = 0;
-                $data["quiz-id"] = $_POST["quiz-id"];
-
-                while($row = $result->fetch_assoc())
-                {
-                    $id = $row["id"];
-                    $answer = $row["answer"];
-                    
-                    if($_POST[$id]==$answer)
-                    {
-                        $data["marks"] = $data["marks"] + $row["marks"];
-                        $data["attempted"]++;
-                        $data["correct"]++;
-                    }
-                    else if($_POST[$id]==0)
-                    {
-                        // do nothing if user not given answer
-                    }
-                    else
-                    {
-                        $data["marks"] = $data["marks"] + $row["negative_marks"];
-                        $data["attempted"]++;
-                    }
-                }
-
-                saveQuizReport($conn,$data);
-
-            }
-            else
-            {
-                header("Location:".$base_url."student/dashboard.php");
-            }
-        }
-    ?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

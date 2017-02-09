@@ -18,7 +18,7 @@
             $mobile = mysqli_real_escape_string($conn,$_POST['mobile']);
 
             $sql = "INSERT INTO registration_data (email,name,password,mobile) VALUES ('$email','$name','$password','$mobile')";
-            
+    
             if($conn->query($sql)==TRUE)
             {
                echo "success";
@@ -34,5 +34,5 @@
     else
     {
         session_destroy();
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }

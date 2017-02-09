@@ -1,6 +1,5 @@
 <?php require('../helper/dbHelper.php'); ?>
 <?php
-
     if(isset($_POST['old']) && isset($_POST['new']))
     {
         $old = md5(mysqli_real_escape_string($conn,$_POST['old']));

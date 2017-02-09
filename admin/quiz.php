@@ -1,22 +1,24 @@
+<?php require('../helper/dbHelper.php');?>
+<?php require('../component/head.php'); ?>
+<?php 
+    if(!isset($_SESSION['admin_id']))
+    {
+        session_destroy();
+        header("Location:".$base_url);
+    }
+
+    if(isset($_POST['quiz_id']))
+    {
+        deleteQuiz($conn,$_POST['quiz_id']);
+    }
+    
+    $result = getQuizList($conn); 
+?>
+
+
+
 <!DOCTYPE HTML>
 <html>
-	<?php require('../helper/dbHelper.php');?>
-	<?php require('../component/head.php'); ?>
-	<?php 
-        if(!isset($_SESSION['admin_id']))
-        {
-            session_destroy();
-            header("Location:".$base_url);
-        }
-
-        if(isset($_POST['quiz_id']))
-        {
-            deleteQuiz($conn,$_POST['quiz_id']);
-        }
-        
-        $result = getQuizList($conn); 
-    ?>
-
 	<body>
 		
 	<div class="fh5co-loader"></div>

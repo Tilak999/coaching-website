@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
-	<?php require('/component/head.php'); ?>
+	<?php require('./component/head.php'); ?>
 
 	<body>
 		
@@ -9,12 +9,12 @@
 	
 	<div id="page">
 	
-	<?php require("/component/nav.php"); ?>
+	<?php require("./component/nav.php"); ?>
 
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   	<li style="background-image: url(/images/img_bg_1.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -28,7 +28,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   	<li style="background-image: url(/images/img_bg_2.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -42,7 +42,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   	<li style="background-image: url(/images/img_bg_3.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -472,7 +472,7 @@
 		</div>
 	</div>
 
-	<?php require('/component/footer.php'); ?>
+	<?php require('./component/footer.php'); ?>
 	
 	</div>
 
@@ -480,7 +480,7 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
-	<?php require('/component/scripts.php'); ?>
+	<?php require('./component/scripts.php'); ?>
 
 	</body>
 </html>
