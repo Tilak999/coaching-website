@@ -12,7 +12,7 @@
                         <li><a href="/won.php">Update </a></li>
                         <li><a href="/about.php">About</a></li>
                         <li><a href="/contact.php">Contact</a></li>
-                        <li class="btn-cta"><a href="#"><span>Logout</span></a></li>
+                        <li class="btn-cta"><a href="/logout.php"><span>Logout</span></a></li>
                     </ul>
                 </div>
             </div>

@@ -111,3 +111,15 @@ select
 {
     background:#ffdada;
 }
+
+.btn-sm
+{
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.nav-btn:hover
+{
+    color:#f95959 !important;
+    font-size: 18px !important;
+}

@@ -13,34 +13,34 @@
 	<div class="container padd-container">
   		<div class="row">
 			  <div class="col-xs-12 col-md-3">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="dashboard.php">Profile</a></li>
-					<li><a href="change_password.php">Change Password</a></li>
-					<li class="active"><a href="quiz.php">Quiz</a></li>
-					<li><a href="#">Attendence</a></li>
-				</ul>
+				<?php 
+				  $student_sidebar = "quiz";
+				  require('../component/student_sidebar.php');
+				?>
 			  </div>
 			  <div class="col-xs-12 col-md-9">
-                <div class="list-group">
-                <center><h3>Take Quiz</h3></center>
-                <?php
+              	<div class="well well-lg shadow">
+                    <div class="list-group">
+                    <center><h3>Take Quiz</h3></center>
+                    <?php
 
-                    if($result !=null)
-                    {
-                        while($row = $result->fetch_assoc())
+                        if($result !=null)
                         {
-                            echo '<a href="take_quiz.php?id='.$row['id'].'"target="_blank" class="list-group-item">'.
-                                 '<i class="icon-pencil"></i> '.$row['title'].
-                                 '<span class="badge">Author: '.$row['author'].'</span></a>';
+                            while($row = $result->fetch_assoc())
+                            {
+                                echo '<a href="take_quiz.php?id='.$row['id'].'"target="_blank" class="list-group-item">'.
+                                    '<i class="icon-pencil"></i> '.$row['title'].
+                                    '<span class="label label-info pull-right">Author: '.$row['author'].'</span></a>';
+                            }
+
+                        }
+                        else
+                        {
+                            echo '<div class="well login-box"><center>Currently no Quiz are available.<br>Check back later.</center></div>';
                         }
 
-                    }
-                    else
-                    {
-                        echo '<div class="well login-box"><center>Currently no Quiz are available.<br>Check back later.</center></div>';
-                    }
-
-                ?>
+                    ?>
+                    </div>
                 </div>
 			  </div>
 		</div>

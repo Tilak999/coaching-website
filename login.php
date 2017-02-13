@@ -8,37 +8,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Coaching<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="practice.html">Practice Areas</a></li>
-							<li><a href="won.html">Won Cases</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+	<?php require("./component/nav.php") ?>
 
 	<div class="grey-div">
 		<div class="well well-lg login-box">
@@ -63,7 +33,7 @@
 						<input type="checkbox"> Remember me
 						</label>
 						<div class="pull-right text-primary">
-							<a href="#forgot">Forgot Password ?</a>
+							<a href="/student/forgot_password.php">Forgot Password ?</a>
 						</div>
 					</div>
 					</div>

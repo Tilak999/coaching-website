@@ -15,6 +15,8 @@
     <meta name="twitter:card" content="" />
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">

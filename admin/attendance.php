@@ -88,7 +88,6 @@
                         <tr>
                             <th>Name</th>
                             <th>Class</th> 
-                            <th>Avg. Attendance</th>
                             <th>Registered On</th>
                         </tr>
                         <?php

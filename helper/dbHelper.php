@@ -16,7 +16,7 @@
     $conn = new mysqli($MySql_server, $MySql_user, $MySql_pass, $MySql_db);
     if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
-    function getProfile($id,$conn)
+    function getProfile($conn,$id)
     {
         $row['id'] = null;
 
@@ -31,6 +31,22 @@
         else
         {
             return $row;
+        }
+    }
+
+    function getProfileByEmail($conn,$email)
+    {
+        $sql = "SELECT * FROM registration_data WHERE email='$email'";
+        $result = $conn->query($sql);
+
+        if($result->num_rows == 1)
+        {
+           $row = $result->fetch_assoc();
+           return $row;
+        }
+        else
+        {
+            return false;
         }
     }
 
@@ -99,8 +115,10 @@
     function saveQuizReport($conn,$data)
     {
         $user = $_SESSION['id'];
-        $sql = "INSERT INTO quiz_report (quiz_id, user_id, marks, attempted, total_question) VALUES (".$data["quiz-id"].
-                ",".$user.", ".$data["marks"].", ".$data["attempted"].", ".$data["count"].")";
+        $row = getQuizData($conn,$data["quiz-id"]);
+        $title = $row['title'];
+        $sql = "INSERT INTO quiz_report (quiz_id, quiz_title, user_id, marks, attempted, total_question) VALUES (".$data["quiz-id"].
+                ",'".$title."',".$user.", ".$data["marks"].", ".$data["attempted"].", ".$data["count"].")";
         
         if($conn->query($sql)==TRUE)
         {
@@ -202,5 +220,19 @@
         else
         {
             return $sql;
+        }
+    }
+
+    function deleteAttendance($conn,$student_id,$id)
+    {
+         $sql = "DELETE FROM attendance WHERE id=$id AND student_id=$student_id";
+        
+        if($conn->query($sql)==TRUE)
+        {
+           return "success";
+        }
+        else
+        {
+            return "Error Deleting Attendance Record";
         }
     }

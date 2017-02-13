@@ -40,8 +40,8 @@
         <div class="row copyright">
             <div class="col-md-12 text-center">
                 <p>
-                    <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-                    <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+                    <small class="block">&copy; Wave Carrier Institute. All Rights Reserved.</small> 
+                    <small class="block">Designed by <a href="http://hunarsfox.com/" target="_blank">HunarsFox.com</a></small>
                 </p>
                 <p>
                     <ul class="fh5co-social-icons">

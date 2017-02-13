@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-xs-10 text-right menu-1">
                         <ul>
-                            <li class="btn-cta"><a href="#"><span>Logout</span></a></li>
+                            <li class="btn-cta"><a href="/logout.php"><span>Logout</span></a></li>
                         </ul>
                     </div>
                 </div>

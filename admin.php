@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Coaching<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="/index.php">Coaching<span>.</span></a></div>
 					</div>
 				</div>
 				

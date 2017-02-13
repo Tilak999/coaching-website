@@ -20,9 +20,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>Expert Legal Solutions</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg" href="#">Make An Appointment</a></p>
+			   					<h1>Take Quiz</h1>
+									<h2></h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -55,7 +55,21 @@
 			   			</div>
 			   		</div>
 		   		</div>
-		   	</li>		   	
+		   	</li>
+			<li style="background-image: url(/images/img_bg_4.jpg);">
+				<div class="overlay-gradient"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+							<div class="slider-text-inner">
+								<h1>Expert Legal Solutions</h1>
+									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
+									<p><a class="btn btn-primary btn-lg" href="#">Make An Appointment</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		   	</li>	   	
 		  	</ul>
 	  	</div>
 	</aside>
@@ -65,57 +79,35 @@
 			<div class="row">
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-user"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="27539" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Satisfied Clients</span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="50" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Students</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-speech-bubble"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="23563" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Cases Won</span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="120" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Test Given</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-trophy"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="5067" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Awards Won</span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="50" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Quiz Papers</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-users"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="2587" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Lawyers</span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="300" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Questions</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="fh5co-content">
-		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
-			<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
-			<div class="overlay"></div>
-		</div>
+		<div class="video fh5co-video" style="background-image: url(images/banner.png);background-size:contain"></div>
 		<div class="choose animate-box">
 			<div class="fh5co-heading">
-				<h2>Why Choose Us?</h2>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-				Adoption Law 50%
-				</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-				Family Law 80%
-				</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-				Real Estate Law 70%
-				</div>
-			</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-				Personal Injury Law 40%
-				</div>
+				<h2>Why Choose Us ?</h2>
+				<p>Online portal play a very important role in the field of education it consist less time and work for the student. We are providing the best study material and online test series throughout India in which in one academic year student will get 150 mock test.</p>
+				<p>All the question are research based which is similar as all the competitive examination. We have the team from various IITs, IIMs and NIT. They are expertise in the field of education.</p>
 			</div>
 		</div>
 	</div>
@@ -124,79 +116,70 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Our Legal Practice Area</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Our Area of Focus</h2>
+					<p>All the question are research based which is similar as all the competitive examination. We have the team from various IITs, IIMs and NIT. They are expertise in the field of education.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-home"></i>
+							<i class="">1</i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Real Estate Law</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">JEE Main</a></h3>
+							<p>Joint Entrance Examination (JEE) is an all India common engineering entrance examination conducted for admission to various engineering colleges and courses all over the country. The test comprises of two stages - JEE Main and the JEE Advanced.</p>
+							<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-eye"></i>
+							<i class="">2</i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Insurance Law</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">JEE Advance</a></h3>
+							<p>Students who qualify JEE-Mains can appear for the JEE-Advanced examination. Approximately 200,000 students qualify to appear for JEE-Advanced examination. All India Ranks will not be calculated with the normalised scores of class 12th marks. </p>
+							<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-shopping-cart"></i>
+							<i class="">3</i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Business Law</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">NEET</a></h3>
+							<p>The National Eligibility cum Entrance Test or NEET-UG is an entrance examination in India, for students who wish to study any graduate medical course (MBBS/ dental course (BDS) or postgraduate course (MD / MS) in government or private medical colleges in India. NEET-UG (Undergraduate), for MBBS and BDS courses, are conducted by the Central Board of Secondary Education (CBSE).</p>
+							<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-umbrella"></i>
+							<i class="">4</i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Personal Injury</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">State Board Exam</a></h3>
+							<p>State board engineering entrance examination is organised by state government in which student can take admission in engineering college of that particular state.</p>
+							<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-heart"></i>
+							<i class="">5</i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Medical Neglegence</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">NTSE/KVPY</a></h3>
+							<p>National Talent Search Examination (NTSE) is a national-level scholarship program in India to identify and recognize students with high intellect and academic talent. It is one of the most prestigious exams in India. Close to 500,000 students (a largely self selective group of students) appear in this scholarship exam every year, and 1000 scholarships are awarded, of which 775 are not reserved .</p>
+							<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-help"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Criminal Defense</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center animate-box">
-					<p><a class="btn btn-primary btn-lg btn-learn" href="#">View More</a></p>
 				</div>
 			</div>
 		</div>
@@ -206,47 +189,41 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Counseling</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Are you Ready for Exam ?</h2>
+					<p>Take one of our Expert curated Test to know how much you are prepared, and how long to go.</p>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Business</h3>
+					<a href="#"><img src="images/ready.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>JEE Mains</h3>
 						<span>CEO. Hon Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Legal Advice</h3>
+					<a href="#"><img src="images/ready.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>JEE Advance</h3>
 						<span>Atty. John Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Read Bible</h3>
+					<a href="#"><img src="images/ready.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>NEET</h3>
 						<span>Ptr. Jhon Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-4.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Affidavit</h3>
+					<a href="#"><img src="images/ready.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>State Board Exam</h3>
 						<span>Atty. Boo Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-5.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Sports</h3>
+					<a href="#"><img src="images/ready.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>KVPY/NTSE</h3>
 						<span>Atty. Smith D</span>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-6.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Photography</h3>
-						<span>Phtr. Arnt Tee</span>
 					</a>
 				</div>
 			</div>

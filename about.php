@@ -8,38 +8,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Law<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="practice.html">Practice Areas</a></li>
-							<li><a href="won.html">Won Cases</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Cases</a></li>
-									<li><a href="#">Won Cases</a></li>
-									<li><a href="#">Criminal Law</a></li>
-									<li><a href="#">Business Law</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+	<?php require("./component/nav.php") ?>
 
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">

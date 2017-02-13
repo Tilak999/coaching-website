@@ -27,32 +27,32 @@
 	<div class="container padd-container">
   		<div class="row">
 			  <div class="col-xs-12 col-md-3">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="dashboard.php">Profile</a></li>
-					<li class="active"><a href="changepassword.php">Change Password</a></li>
-					<li><a href="#">Quiz</a></li>
-					<li><a href="#">Attendence</a></li>
-				</ul>
+				<?php 
+				  $student_sidebar = "change password";
+				  require('../component/student_sidebar.php');
+				?>
 			  </div>
 			  <div class="col-xs-12 col-md-9">
-              <div class="alert alert-warning hidden">
-                <center>Password should be atleast 6 charecters long.</center>
-              </div>
-			  <div class="form-group">
-					<label>Current Password</label>
-					<input id="old" type="password" class="form-control">
-				</div>
-				<div class="form-group">
-					<label>New Password</label>
-					<input id="new" type="password" class="form-control" placeholder="new password">
-				</div>
-                <div class="form-group">
-					<label>Re-type Password</label>
-					<input id="re" type="password" class="form-control" placeholder="Re-type password">
-				</div>
-				<br>
-				<button id="change"type="button" class="btn btn-primary">Change</button>
-			  </div>
+              	<div class="well well-lg shadow">
+                    <div class="alert alert-warning hidden">
+                        <center>Password should be atleast 6 charecters long.</center>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Password</label>
+                        <input id="old" type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input id="new" type="password" class="form-control" placeholder="new password">
+                    </div>
+                    <div class="form-group">
+                        <label>Re-type Password</label>
+                        <input id="re" type="password" class="form-control" placeholder="Re-type password">
+                    </div>
+                    <br>
+                    <button id="change"type="button" class="btn btn-primary">Change</button>
+			    </div>
+            </div>
 		</div>
 	</div>
 	

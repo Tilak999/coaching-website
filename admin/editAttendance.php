@@ -1,7 +1,13 @@
 <?php require('../helper/dbHelper.php');?>
 <?php
 
-if(isset($_POST['id']))
+    if(isset($_POST['record_id']))
+    {
+        echo deleteAttendance($conn,$_POST['id'],$_POST['record_id']);
+        die();
+    }
+
+    if(isset($_POST['id']))
     {
         $id = mysqli_real_escape_string($conn,$_POST['id']);
         $dur = mysqli_real_escape_string($conn,$_POST['duration']);
@@ -27,6 +33,7 @@ if(isset($_POST['id']))
             <th>Attended</th> 
             <th>Total</th>
             <th>Average</th>
+            <th>Delete</th>
         </tr>
 
 <?php
@@ -39,7 +46,8 @@ if(isset($_POST['id']))
                         "<td>$duration</td>".
                         "<td>$attended</td>". 
                         "<td>$total</td>".
-                        "<td>".(($attended/$total)*100)."</td>".
+                        "<td>".(($attended/$total)*100)."%</td>".
+                        "<td align=\"center\" onclick=\"deleteAttendance($id)\"><span class=\"glyphicon glyphicon-trash\"></span></td>".
                      "</tr>";
             }
         }
@@ -76,6 +84,28 @@ if(isset($_POST['id']))
             else
             {
                 alert("Unexpected error !");
+                window.close();
+            }
+        });
+    }
+
+    function deleteAttendance(id)
+    {
+        $.post("editAttendance.php",
+        {
+            id: <?php echo $_GET['id'] ?>,
+            record_id: id
+        },
+        function(data, status){
+        
+            if(data=="success")
+            {
+                alert("Attendance updated");
+                location.reload();
+            }
+            else
+            {
+                alert("Unexpected error !\n"+data);
                 window.close();
             }
         });
