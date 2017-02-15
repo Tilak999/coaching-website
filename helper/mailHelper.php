@@ -9,13 +9,13 @@ function sendRecoveryMail($email,$password)
     $from = "Wave Carrier Institute<no-reply@wavecarrierinstitute.com>";
     $to = $email;
     $subject = "Password recovery Mail";
-    $txt = "Visit this link to reset password:\n".
-           "http://wavecarrierinstitute/student/resetpassword.php?email=$email&id=$password".
+    $txt = "Hello,\nVisit this link to reset password:\n".
+           "http://wavecarrierinstitute.com/student/resetpassword.php?email=$email&id=$password".
            "\n\nNote: Ignore this mail if you haven't requested for password reset.";
-    $html = "<p>Visit this link to reset password:<br>".
-           "<a href=\"http://wavecarrierinstitute/student/resetpassword.php?email=$email&id=$password\">".
+    $body = "Hello,<br><p>Visit this link to reset password:<br>".
+           "<br><a href=\"http://wavecarrierinstitute.com/student/resetpassword.php?email=$email&id=$password\">".
            "Click here to reset password.</a>".
-           "<br><br>Note: Ignore this mail if you haven't requested for password reset."; 
+           "<br><br>Note: Ignore this mail if you haven't requested for password reset.</p>"; 
     
     $host = "ssl://sg2plcpnl0251.prod.sin2.secureserver.net";
     $port = "465";
@@ -23,9 +23,9 @@ function sendRecoveryMail($email,$password)
     $password = "no-reply";
     $headers = array ('From' => $from,'To' => $to,'Subject' => $subject);
 
-    $mime = new Mail_mime('\n');
+    $mime = new Mail_mime();
     $mime->setTXTBody($txt);
-    $mime->setHTMLBody($html);
+    $mime->setHTMLBody($body);
     
     $body = $mime->get();
     $headers = $mime->headers($headers);

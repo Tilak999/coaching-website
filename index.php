@@ -281,53 +281,6 @@
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
-		</div>
-		<div class="choose animate-box">
-			<div class="fh5co-heading">
-				<h2>Free Legal Consultation</h2>
-			</div>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<!-- <label for="fname">First Name</label> -->
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-					<div class="col-md-6">
-						<!-- <label for="lname">Last Name</label> -->
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<!-- <label for="email">Email</label> -->
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<!-- <label for="subject">Subject</label> -->
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<!-- <label for="message">Message</label> -->
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
-
 	<div id="fh5co-blog" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
@@ -381,8 +334,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Our Attorneys</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Our Students</h2>
+					<p>Here are some of our Acheivers.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -390,60 +343,25 @@
 					<div class="fh5co-staff">
 						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Jean Smith</h3>
-						<strong class="role">Counsel</strong>
+						<strong class="role">JEE Mains</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
 						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Hush Raven</h3>
-						<strong class="role">Head of International Practice</strong>
+						<strong class="role">NEET</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
 						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Alex King</h3>
-						<strong class="role">Managing Partner, Attorney</strong>
+						<strong class="role">NTSE</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Legal Advice</h2>
-					<p>We help people effectively fight their offenders back and successfully defend their own stand!</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<p><a href="#" class="btn btn-default btn-lg">Consultation</a></p>
 				</div>
 			</div>
 		</div>

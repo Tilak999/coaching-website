@@ -2,13 +2,12 @@
     <div class="top-menu">
         <div class="container">
             <div class="row">
-                <div class="col-xs-10 col-md-5">
+                 <div class="col-md-4 col-sm-3 col-xs-5">
                     <div id="fh5co-logo">
-                        <img src="/images/logo.png" width="50px">
-                        <a href="/index.html">WAVE CARRIER INSTITUTE<span>.</span></a>
+                        <img src="/images/header.png" width="100%">
                     </div>
                 </div>
-                <div class="col-xs-7 text-right menu-1">
+                <div class="col-md-8 col-sm-12 col-xs-8 text-right menu-1">
                     <ul>
                         <li><a class="nav-btn" href="/index.php">Home</a></li>
                         <li><a class="nav-btn" href="/login.php">Take Quiz</a></li>

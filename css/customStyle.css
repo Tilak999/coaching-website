@@ -4,6 +4,16 @@
     background: #f5f5f5;
 }
 
+.top-menu
+{
+    background: #080d2a;
+}
+
+.fh5co-nav ul li a 
+{
+    color:white;
+}
+
 .login-box
 {
     background: white;
@@ -122,4 +132,40 @@ select
 {
     color:#f95959 !important;
     font-size: 18px !important;
+}
+
+.fh5co-counters
+{
+    background:#e8c767;
+}
+
+#fh5co-content
+{
+    background: #b35238;
+}
+
+#fh5co-content h2,
+#fh5co-content p,
+#fh5co-practice h2,
+#fh5co-practice > div > div.row.animate-box.fadeInUp.animated-fast > div > p,
+#fh5co-project h2,
+#fh5co-project p
+{
+    color: #fff;
+}
+
+#fh5co-practice
+{
+    background-image: url('../images/bck_focus.jpg');
+    background-size: cover;
+}
+
+#fh5co-project
+{
+    background-image: url('../images/take_quiz_bck.png');
+}
+
+#fh5co-testimonial
+{
+    background-image: url('../images/testimonial.jpg');
 }
