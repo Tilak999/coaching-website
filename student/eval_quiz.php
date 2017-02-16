@@ -35,9 +35,7 @@
                     $data["attempted"]++;
                 }
             }
-
             saveQuizReport($conn,$data);
-
         }
         else
         {

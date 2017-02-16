@@ -37,7 +37,33 @@
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 Banglore</li>
+							<li class="address">
+								<h3>H.O. ADDRESS</h3>
+								<p>460 ASHWATH NAGAR<br>THANISANDRA MAIN ROAD<br> BANGALORE-560077</p>
+
+								<h3>BRANCH ADDRESS</h3>
+								<b>PATNA</b><br>
+								3D POPULAR PALACE</br>
+								BARIPATH</br>
+								LANGARTOLI</br>
+								PATNA-800004</br>
+
+								<b>RANCHI</b><br>
+								43 ITO GOLAMBAR</br>
+								DHURVA RANCHI</br>
+								JHARKHAND-834001</br>
+
+								<b>INDORE</b><br>
+								FERN BLOCK<br>
+								SHALIMAR TOWNSHIP<br>
+								AB ROAD<br>
+								INDORE-452010<br>
+
+								<b>DELHI</b><br>
+								N-57<br>
+								SRINIWASPURI<br>
+								NEW DELHI-110065<br>
+							</li>
 							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
 							<li class="email"><a href="mailto:info@wavecarrierinstitute.com">info@wavecarrierinstitute.com</a></li>
 							<li class="url"><a href="http://wavecarrierinstitute.com">www.wavecarrierinstitute.com</a></li>

@@ -10,7 +10,7 @@
 	<div id="page">
 	<?php require("./component/nav.php") ?>
 
-	<div class="grey-div">
+	<div class="golden-div">
 		<div class="well well-lg login-box">
 			<center><h2 class="color-grey">Login</h2></center>
 			<form class="form-horizontal">

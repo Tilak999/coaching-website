@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #000;
+  color:black;
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-testimonial,
 #fh5co-started,
 #fh5co-project,
-#fh5co-blog,
+#fh5co-experts,
 #fh5co-contact,
 #fh5co-footer {
   padding: 7em 0;
@@ -432,7 +432,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-testimonial,
   #fh5co-started,
   #fh5co-project,
-  #fh5co-blog,
+  #fh5co-experts,
   #fh5co-contact,
   #fh5co-footer {
     padding: 3em 0;
@@ -1018,7 +1018,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  background: #efefef;
+  background: #000;
 }
 #fh5co-footer .fh5co-footer-links {
   padding: 0;
@@ -1035,7 +1035,7 @@ h1, h2, h3, h4, h5, h6, figure {
   list-style: none;
 }
 #fh5co-footer .fh5co-footer-links li a {
-  color: rgba(0, 0, 0, 0.5);
+  color:rgba(255,255,255,0.8);
   text-decoration: none;
 }
 #fh5co-footer .fh5co-footer-links li a:hover {
@@ -1105,10 +1105,10 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
 }
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
 }
 #fh5co-offcanvas ul {
   padding: 0;
@@ -1237,10 +1237,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav-toggle.fh5co-nav-white > i {
   color: #fff;
-  background: #000;
+  background: #fff;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-  background: #000;
+  background: #fff;
 }
 
 .fh5co-nav-toggle i::before {

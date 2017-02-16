@@ -1,25 +1,26 @@
 <!DOCTYPE HTML>
 <html>
-	
-	<?php include ('./component/head.php'); ?>
-	
+
+	<?php require('./component/head.php'); ?>
+
 	<body>
 		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<?php require("./component/nav.php") ?>
+	
+	<?php require("./component/nav.php"); ?>
 
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   	<li style="background-image: url(images/img_bg_3.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner desc">
-		   					<h2 class="heading-section">About Us</h2>
-		   					<p class="fh5co-lead">We help students to prepare for all Major Competitive Exams.</p>
+		   					<h2 class="heading-section">Achievers</h2>
+		   					<p class="fh5co-lead">Here are some of our Achievers who made it.</p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -27,52 +28,53 @@
 		  	</ul>
 	  	</div>
 	</aside>
-	<div id="fh5co-content">
-		<div class="content-image">
-			<img src="images/logo.png" width="40%">
-			<p>Transforming Education Transforming Bharat</p>
-		</div>
-		<div class="choose animate-box">
-			<div class="fh5co-heading">
-				<h2>Why Choose Us ?</h2>
-				<p>Online portal play a very important role in the field of education it consist less time and work for the student. We are providing the best study material and online test series throughout India in which in one academic year student will get 150 mock test.</p>
-				<p>All the question are research based which is similar as all the competitive examination. We have the team from various IITs, IIMs and NIT. They are expertise in the field of education.</p>
-			</div>
-		</div>
-	</div>
 
-	<div id="fh5co-experts">
+	<div id="fh5co-project">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Our Experts</h2>
-					<p>This are our experts who curated top-notch Quiz and study material.</p>
+					<h2>Top Students</h2>
+					<p>Some of our Top Scoring Students.</p>
 				</div>
 			</div>
+		</div>
+		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Jean Smith</h3>
-						<strong class="role">JEE Mains</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-					</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
 				</div>
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Hush Raven</h3>
-						<strong class="role">NEET</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-					</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
 				</div>
-				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Alex King</h3>
-						<strong class="role">NTSE</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-					</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Ankit Sharma</h3>
+						<span>JEE Mains - 150</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -147,26 +149,15 @@
 		</div>
 	</div>
 
-	<?php include('./component/footer.php'); ?>
-
+	<?php require('./component/footer.php'); ?>
+	
 	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<script src="js/main.js"></script>
+	<?php require('./component/scripts.php'); ?>
 
 	</body>
 </html>

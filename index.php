@@ -20,9 +20,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>Take Quiz</h1>
-									<h2></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
+			   					<h1>Are you preparing for Competitive Exams ?</h1>
+									<h2>Take a test today to know how much you are prepared. Choose from more than 2500+ test papers.</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Take Quiz</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -34,9 +34,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>Business Law</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
+			   					<h1>JEE Mains</h1>
+									<h2>JEE is a national level engineering entrance exam to be held yearly in India. JEE basically a common entrance examination for admission to different engineering courses. JEE score is the main criteria for admission in Indian Institute of Technology and National Institute of technology. Are you prepared ?</h2>
+								<p><a class="btn btn-primary btn-lg btn-learn" href="#">Take Quiz</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -48,9 +48,9 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>Defend Your Constitutional Right with Legal Help</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
+			   					<h1>JEE Advance</h1>
+									<h2>JEE Advance is the second part of JEE enterence Exam, it requires deep knowledge and understanding of core subjects. Are you prepared ?</h2>
+								<p><a class="btn btn-primary btn-lg btn-learn" href="#">Take Quiz</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -62,9 +62,10 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 							<div class="slider-text-inner">
-								<h1>Expert Legal Solutions</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-									<p><a class="btn btn-primary btn-lg" href="#">Make An Appointment</a></p>
+								<h1>NEET</h1>
+									<h2>National Eligibility cum Entrance Test or NEET is the country’s sole medical entrance examination, 
+									through which all medical colleges, run by the central and state governments will admit students</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Take Quiz</a></p>
 							</div>
 						</div>
 					</div>
@@ -79,22 +80,22 @@
 			<div class="row">
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-user"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="50" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="2570" data-speed="2000" data-refresh-interval="200"></span>
 					<span class="fh5co-counter-label">Students</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-speech-bubble"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="120" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="3697" data-speed="2000" data-refresh-interval="200"></span>
 					<span class="fh5co-counter-label">Test Given</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-trophy"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="50" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="2600" data-speed="2000" data-refresh-interval="200"></span>
 					<span class="fh5co-counter-label">Quiz Papers</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<span class="icon"><i class="icon-users"></i></span>
-					<span class="fh5co-counter js-counter" data-from="0" data-to="300" data-speed="2000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter js-counter" data-from="0" data-to="3651" data-speed="2000" data-refresh-interval="200"></span>
 					<span class="fh5co-counter-label">Questions</span>
 				</div>
 			</div>
@@ -102,7 +103,10 @@
 	</div>
 
 	<div id="fh5co-content">
-		<div class="video fh5co-video" style="background-image: url(images/banner.png);background-size:contain"></div>
+		<div class="content-image">
+			<img src="images/logo.png" width="40%">
+			<p>Transforming Education Transforming Bharat</p>
+		</div>
 		<div class="choose animate-box">
 			<div class="fh5co-heading">
 				<h2>Why Choose Us ?</h2>
@@ -281,61 +285,49 @@
 		</div>
 	</div>
 
-	<div id="fh5co-blog" class="fh5co-bg-section">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Recent Post</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-4.jpg" alt=""></a>
-						<div class="blog-text">
-							<span class="posted_on">Nov. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<h3><a href="#">Legal Consultation</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<a href="#" class="btn btn-primary">Read More</a>
-						</div> 
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-2.jpg" alt=""></a>
-						<div class="blog-text">
-							<span class="posted_on">Nov. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<h3><a href="#">Criminal Case</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<a href="#" class="btn btn-primary">Read More</a>
-						</div> 
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-3.jpg" alt=""></a>
-						<div class="blog-text">
-							<span class="posted_on">Nov. 15th</span>
-							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
-							<h3><a href="#">Business Law</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<a href="#" class="btn btn-primary">Read More</a>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<div id="fh5co-about">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Our Students</h2>
 					<p>Here are some of our Acheivers.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3>Jean Smith</h3>
+						<strong class="role">JEE Mains</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3>Hush Raven</h3>
+						<strong class="role">NEET</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<h3>Alex King</h3>
+						<strong class="role">NTSE</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-experts">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Our Experts</h2>
+					<p>This are our experts who curated top-notch Quiz and study material.</p>
 				</div>
 			</div>
 			<div class="row">

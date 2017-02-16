@@ -25,10 +25,12 @@
         <div class="top-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-2">
-                        <div id="fh5co-logo"><a href="/index.php">Law<span>.</span></a></div>
+                    <div class="col-md-4 col-sm-2 col-xs-10">
+                        <div id="fh5co-logo">
+                            <img src="/images/header.png">
+                        </div>
                     </div>
-                    <div class="col-xs-10 text-right menu-1">
+                    <div class="col-xs-8 col-sm-10 col-sm-8 text-right">
                         <button class="btn btn-default" id="clock">00:00:00</button>
                         <button class="btn btn-primary" onclick="submit()">Submit</button>
                     </div>
@@ -38,7 +40,7 @@
     </nav>
 
 	<div class="container padd-container">
-        <br><br><br>
+        <br><br><br><br>
   		<div class="row">
               <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default shadow">
@@ -52,7 +54,8 @@
                 </div>
               </div>
 
-			  <div class="col-xs-12 col-md-8 well">
+			  <div class="col-xs-12 col-md-8 shadow">
+                <br>
                 <h3><?php echo $quiz["title"]; ?></h3>
                 <form action="eval_quiz.php" method="POST">
                 <input type="text" class="hidden" name="quiz-id" value="<?php echo $quiz["id"]; ?>"/>
