@@ -15,9 +15,8 @@
 	<div id="page">
 	<?php require("./component/nav.php") ?>
 
-	<div class="golden-div">
-		<div class="well well-lg login-box">
-			<center><h2 class="color-grey">Register</h2></center>
+		<div class="well well-lg shadow login-box">
+			<center><h2 class="color-grey">Register</h2></center><br>
 			<form class="form-horizontal">
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -54,18 +53,17 @@
 					<button type="submit" class="btn btn-default">Register</button>
 					</div>
 				</div>
-				<div id="invalid_email" class="alert alert-warning hidden">
+				<div id="invalid_email" class="alert alert-danger hidden">
 					Invalid E-mail.
 				</div>
-				<div id="password_error" class="alert alert-warning hidden">
+				<div id="password_error" class="alert alert-danger hidden">
 					Password don't match<br>or password length is less than 7.
 				</div>
-				<div id="invalid_mobile" class="alert alert-warning hidden">
+				<div id="invalid_mobile" class="alert alert-danger hidden">
 					Invalid mobile number.
 				</div>
 			</form>
 		</div>
-	</div>
 
 	<?php include('./component/footer.php'); ?>
 	

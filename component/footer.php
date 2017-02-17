@@ -10,6 +10,7 @@
                 <ul class="fh5co-footer-links">
                     <li><a href="/index.php">Home</a></li>
                     <li><a href="/about_quiz.php">Take Quiz</a></li>
+                    <li><a href="/about.php#fh5co-experts">Expert Faculty</a></li>
                     <li><a href="/about.php">About us</a></li>
                     <li><a href="/contact.php">Contact us</a></li>
                 </ul>

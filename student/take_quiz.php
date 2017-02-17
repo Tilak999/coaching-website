@@ -2,10 +2,19 @@
 <?php require('../component/head.php'); ?>
 <?php 
     
-    if(isset($_GET['id']))
+    if(isset($_SESSION['random_hash']) && isset($_SESSION['quiz_id']) && isset($_SESSION['token']) && isset($_GET['uid']))
     {
-        $result = getQuestions($conn,$_GET['id']);
-        $quiz = getQuizData($conn,$_GET['id']);
+        $hash = md5($_SESSION['random_hash'].$_SESSION['quiz_id'].$_SESSION['token']);
+        if($hash == $_GET['uid'])
+        {
+            $result = getQuestions($conn,$_SESSION['quiz_id']);
+            $quiz = getQuizData($conn,$_SESSION['quiz_id']);
+        }
+        else
+        {
+            header("Location:".$base_url);
+            die();
+        }
     }
     else
     {

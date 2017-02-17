@@ -10,8 +10,7 @@
 	<div id="page">
 	<?php require("./component/nav.php") ?>
 
-	<div class="golden-div">
-		<div class="well well-lg login-box">
+		<div class="well well-lg shadow login-box">
 			<center><h2 class="color-grey">Login</h2></center>
 			<form class="form-horizontal">
 				<div class="form-group">
@@ -51,7 +50,6 @@
 				</div>
 			</form>
 		</div>
-	</div>
 
 	<?php include('./component/footer.php'); ?>
 

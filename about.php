@@ -52,7 +52,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="images/faculty/fa1.jpg">
 						<h3>Jean Smith</h3>
 						<strong class="role">JEE Mains</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="images/faculty/fa2.jpg">
 						<h3>Hush Raven</h3>
 						<strong class="role">NEET</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
@@ -68,7 +68,39 @@
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="images/faculty/fa3.jpg">
+						<h3>Alex King</h3>
+						<strong class="role">NTSE</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/faculty/fa4.jpg">
+						<h3>Alex King</h3>
+						<strong class="role">NTSE</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/faculty/fa5.jpg">
+						<h3>Alex King</h3>
+						<strong class="role">NTSE</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/faculty/fa6.jpg">
+						<h3>Alex King</h3>
+						<strong class="role">NTSE</strong>
+						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
+					<div class="fh5co-staff">
+						<img src="images/faculty/fa7.jpg">
 						<h3>Alex King</h3>
 						<strong class="role">NTSE</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>

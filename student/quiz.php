@@ -28,7 +28,7 @@
                         {
                             while($row = $result->fetch_assoc())
                             {
-                                echo '<a href="take_quiz.php?id='.$row['id'].'"target="_blank" class="list-group-item">'.
+                                echo '<a href="payment.php?id='.$row['id'].'"target="_blank" class="list-group-item">'.
                                     '<i class="icon-pencil"></i> '.$row['title'].
                                     '<span class="label label-info pull-right">Author: '.$row['author'].'</span></a>';
                             }

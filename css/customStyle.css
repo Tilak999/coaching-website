@@ -30,8 +30,8 @@ body
     background: white;
     max-width:700px;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .color-grey{
@@ -159,7 +159,14 @@ select
 #fh5co-content
 {
     background: #0b455f;
+    
     /*#0d112f*/
+}
+
+#fh5co-practice,
+#fh5co-content p,
+{
+    text-align: justify;
 }
 
 #fh5co-content h2,
@@ -200,4 +207,17 @@ select
 {
     padding-top:40px;
     padding-bottom: 20px;
+}
+
+.services .icon
+{
+    font-size: 40px;
+    color:white;
+    padding-top:10px;
+}
+
+/* css used in course.php */
+#desc>div
+{
+    display: none;
 }

@@ -1,3 +1,32 @@
+<?php require("./helper/mailHelper.php"); ?>
+<?php 
+
+	$str="";
+	if(!isset($_POST['fname'])) $str = $str."First name required <br>";
+	if(!isset($_POST['email'])) $str = $str."E-mail required <br>";
+	if(!isset($_POST['subject'])) $str = $str."Subject required <br>";
+	if(!isset($_POST['message'])) $str = $str."Message required";
+
+	if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
+	{
+		//your site secret key
+        $secret = '6LeH8xUUAAAAAGZ3Ts68dXPkjLU6hy38GFjLEK6R';
+        //get verify response data
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+
+        if($responseData->success)
+		{
+			if($str=="" && !empty($_POST['email']))
+			{
+				$str = "Your message successfully saved. <br> We will contact you soon.";
+				sendQueryMail($_POST);
+			}
+		}
+	}
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -11,27 +40,9 @@
 	
 	<?php require("./component/nav.php"); ?>
 
-	<aside id="fh5co-hero" class="js-fullheight">
-		<div class="flexslider js-fullheight">
-			<ul class="slides">
-		   	<li style="background-image: url(images/contactus.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container">
-		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-		   				<div class="slider-text-inner desc">
-		   					<h2 class="heading-section">Contact Us</h2>
-		   					<p class="fh5co-lead">Have any feedback or query, we are happy to help you.</p>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
-	</aside>
-
 	<div id="fh5co-contact">
 		<div class="container well well-lg shadow">
-			<br><br>
+            <br><br>
 			<div class="row">
 				<div class="col-md-5 col-md-push-1 animate-box">
 					
@@ -73,6 +84,9 @@
 
 				</div>
 				<div class="col-md-6 animate-box">
+                    <div class="alert alert-warning">
+                        <?php echo $str; ?>
+                    </div>
 					<h3>Send A Message</h3>
 					<form action="/submitQuery.php" method="POST">
 						<div class="row form-group">
@@ -114,11 +128,9 @@
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
-
 					</form>		
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<div id="map" class="fh5co-map"></div>
@@ -136,7 +148,7 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
-	
+
 	</body>
 </html>
 
