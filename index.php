@@ -84,17 +84,17 @@
 					<span class="fh5co-counter-label">Students</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
-					<span class="icon"><i class="icon-speech-bubble"></i></span>
+					<span class="icon"><i class="glyphicon glyphicon-edit"></i></span>
 					<span class="fh5co-counter js-counter" data-from="0" data-to="3697" data-speed="2000" data-refresh-interval="10"></span>
 					<span class="fh5co-counter-label">Test Given</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
-					<span class="icon"><i class="icon-trophy"></i></span>
+					<span class="icon"><i class="glyphicon glyphicon-book"></i></span>
 					<span class="fh5co-counter js-counter" data-from="0" data-to="2600" data-speed="2000" data-refresh-interval="10"></span>
 					<span class="fh5co-counter-label">Quiz Papers</span>
 				</div>
 				<div class="col-md-3 text-center animate-box">
-					<span class="icon"><i class="icon-users"></i></span>
+					<span class="icon"><i class="glyphicon glyphicon-question-sign"></i></span>
 					<span class="fh5co-counter js-counter" data-from="0" data-to="3651" data-speed="2000" data-refresh-interval="10"></span>
 					<span class="fh5co-counter-label">Questions</span>
 				</div>

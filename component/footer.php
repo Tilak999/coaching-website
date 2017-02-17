@@ -26,6 +26,7 @@
                     <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
                     <li><a href="mailto:info@wavecarrierinstitute.com">info@wavecarrierinstitute.com</a></li>
                     <li><a href="http://wavecarrierinstitute.com">wavecarrierinstitute.com</a></li>
+                    <li><a href="https://www.facebook.com/wavecarrierinstitute/"><i class="icon-facebook"></i> wavecarrierinstitute</a></li>
                 </ul>
             </div>
 
@@ -47,9 +48,7 @@
                 <p>
                     <ul class="fh5co-social-icons">
                         <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <li><a href="https://www.facebook.com/wavecarrierinstitute/"><i class="icon-facebook"></i></a></li>
                     </ul>
                 </p>
             </div>
