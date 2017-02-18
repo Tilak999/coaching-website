@@ -7,6 +7,9 @@
         $hash = md5($_SESSION['random_hash'].$_SESSION['quiz_id'].$_SESSION['token']);
         if($hash == $_GET['uid'])
         {
+            unset($_SESSION['random_hash']);
+            unset($_SESSION['quiz_id']);
+            
             $result = getQuestions($conn,$_SESSION['quiz_id']);
             $quiz = getQuizData($conn,$_SESSION['quiz_id']);
         }
